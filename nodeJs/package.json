@@ -1,0 +1,11 @@
+{
+  "name": "jsTraining",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    
+  }
+}
