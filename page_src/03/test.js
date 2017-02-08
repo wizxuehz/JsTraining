@@ -34,7 +34,7 @@ function initDom() {
     div = document.createElement('div');
     label = document.createElement('label');
     input = document.createElement('input');
-    input.setAttribute('type', 'text');
+    input.setAttribute('type', 'password');
     input.id = 'password';
     label.setAttribute('for', 'password');
     label.innerText = '密码：';
@@ -66,4 +66,3 @@ function initDom() {
     });
 
 }
-
