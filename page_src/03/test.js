@@ -24,14 +24,23 @@ function initDom(){
     return;
     //
     elemLogOn.addEventListener("click", function(e){
-            var username = document.getElementById("username").value;
+            var elem = document.getElementById("username");
+            if(!elem)
+            return;
+            var username = elem.value;
             if(username == undefined || username == null || username == ""){
                 alert("用户名为空");
+                elem.focus();
                 return;
             }
-            var pwd = document.getElementById("password").value;
+            elem = document.getElementById("password");
+            if(!elem)
+            return;
+            //
+            var pwd = elem.value;
             if(pwd == undefined || pwd == null || pwd == ""){
                 alert("密码为空");
+                elem.focus();
                 return;
             }
             alert("开始登录");
