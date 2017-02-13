@@ -107,14 +107,19 @@ function initDom(){
     }
     var password = elem.value;
     //
-   $.post("/api/login", {"user_id": username, "password": password}, function(json){
+    //$(this).att("disable", true);
+    //
+    $.post("/api/login", {"user_id": username, "password": password}, function(json){
        console.log(json);
        if(json.code == "200"){
            alert("登录成功");
        }else{
            alert("登录失败,错误码为：" + json.code + " 错误信息为：" + json.message);
        }
-   });
+   }).success(function(){/*$(this).att("disable", false);*/})
+   .error(function(){/*$(this).att("disable", false);*/})
+   .complete(function(){/*$(this).att("disable", false);*/});
+   
 })
 }
 

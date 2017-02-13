@@ -13,10 +13,8 @@ function interval(){
     t = setTimeout("interval()", intervalmillisec);
 }
 function setTimer(callback, millisec){
-    intervalCallback = callback;
-    intervalmillisec = millisec;
-    //
-    interval();
+    callback();
+    return 
 }
 //
 function testInterval(){
