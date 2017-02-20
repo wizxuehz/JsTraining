@@ -45,25 +45,14 @@ readFileSync();
 //未测试
 function getText(){
     return new Promise(function(resolve, reject){
-        if(nextfileName === "done"){
-            console.log(nextfileName);
-            resolve();
-            return ;
-        }
-        //
-        if(!nextfileName){
-            nextfileName = "start.txt";
-        }
-        fs.readFile(nextfileName, function(err, data){
+        fs.readFile("start.txt", "UTF-8", function(err, data){
             if(err){
                 reject(err);
             }else{
-                if(data !== "done"){
-                    nextfileName = data + ".txt";
-                }
+                console.log(data);
                 resolve(data);
             }
         })
     });
 }
-getText.then(getText())
+getText();
