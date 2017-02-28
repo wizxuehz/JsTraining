@@ -1,0 +1,15 @@
+body{
+        font-family: "Microsoft YaHei", Georgia, Helvetica, Arial, sans-serif, 宋体, serif, PMingLiU;
+        color: rgb(51, 51, 51);
+        background-color: #f4f7fc;
+        font-size: 10pt;
+        line-height: 1.5;
+        }
+td{
+        line-height: 30px;
+        }
+div{
+        line-height: 2;
+        margin:2 2 2 2;
+        color:#2d3138;
+        }

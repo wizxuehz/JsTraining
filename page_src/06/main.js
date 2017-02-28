@@ -1,55 +1,4 @@
-<html>
-    <head>
-        <title>LogOn</title>
-        <script type="text/javascript" src="jquery-1.8.1.min.js"></script>
-        <style>
-        body{
-            font-family: "Microsoft YaHei", Georgia, Helvetica, Arial, sans-serif, 宋体, serif, PMingLiU;
-            color: rgb(51, 51, 51);
-            background-color: #f4f7fc;
-            font-size: 10pt;
-            line-height: 1.5;
-        }
-        td{
-            line-height: 30px;
-        }
-        div{
-            line-height: 2;
-            margin:2 2 2 2;
-            color:#2d3138;
-        }
-        </style>
-    </head>
-    <body>
-        <div id="bizGroups" style="display:none"></div>
-        <div id="login">
-            <table align="center">
-                <tr>
-                    <td>
-                        <label for="username">用户名：</label>
-                    </td>
-                    <td>
-                        <input type="text" id="username" data-emppty="用户名不能为空"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="password">密码：</label>
-                    </td>
-                    <td>
-                        <input type="password" id="password" data-empty="密码不能为空"/>
-                    </td>
-                </tr>
-                <tr>   <!-- 登录按钮水平居中如何实现？ -->
-                    <td colspan="2" align="center">  
-                        <button id="submit">登录</button>
-                    </td>
-                </tr>
-            </table>
-            <div id="loginfailed" style="text-align: center"></div>
-        </div>
-        <script type="text/javascript">
-        document.body.onload = function(){
+document.body.onload = function(){
             document.getElementById("username").focus();
         }
         function CheckValueIsNull(elem){
@@ -181,7 +130,3 @@
                 }
             }
         }
-        </script>
-    </body>
-</html>
-

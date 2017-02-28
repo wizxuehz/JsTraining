@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>LogOn</title>
+        <link rel="stylesheet" type="text/css" href="default.css"></link>
+        <script type="text/javascript" src="jquery-1.8.1.min.js"></script>
+        <script type="text/javascritp" src="main.js"></script>
+    </head>
+    <body>
+        <div id="bizGroups" style="display:none"></div>
+        <div id="login">
+            <table align="center">
+                <tr>
+                    <td>
+                        <label for="username">用户名：</label>
+                    </td>
+                    <td>
+                        <input type="text" id="username" data-emppty="用户名不能为空"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">密码：</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" data-empty="密码不能为空"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">  
+                        <button id="submit">登录</button>
+                    </td>
+                </tr>
+            </table>
+            <div id="loginfailed" style="text-align: center"></div>
+        </div>
+        <div id="loading"></div>
+    </body>
+</html>
+
